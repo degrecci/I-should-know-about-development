@@ -9,3 +9,5 @@
 - [Frontend Roadmap](https://roadmap.sh/frontend)
 - [React Roadmap](https://roadmap.sh/react)
 - [Javascript Roadmap](https://roadmap.sh/javascript)
+- [Dev Docs](https://devdocs.io/)
+- [MDN](https://developer.mozilla.org/)

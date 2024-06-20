@@ -6,6 +6,16 @@ Front-end development is resposable to create user interfaces of a website, work
 
 ## REST Principles
 
+Representation State Transfer is a group of software architecture that bring efficient, reliable and scalable systems.
+
+To an API be considered RESTful, must be:
+
+- Server/Client with http requests
+- Stateless comunication between client/server, requests are splitted and desconected
+- Store data in cache to optmize
+- Informations must have a standart format.
+- A system with layers that organizze types of servers.
+
 ## Web components
 
 Suite of technologies that allows to create reusable custom elements. encapsulating away from the rest of the code.

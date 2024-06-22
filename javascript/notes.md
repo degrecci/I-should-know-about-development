@@ -104,6 +104,51 @@ callbacks are normally used to execute after a async operation is finished. A go
 
 ### Callback hell
 
+Async javascript that uses callbacks, can generate a lot of code like this:
+
+```js
+fs.readdir(source, function (err, files) {
+  if (err) {
+    console.log("Error finding files: " + err);
+  } else {
+    files.forEach(function (filename, fileIndex) {
+      console.log(filename);
+      gm(source + filename).size(function (err, values) {
+        if (err) {
+          console.log("Error identifying file size: " + err);
+        } else {
+          console.log(filename + " : " + values);
+          aspect = values.width / values.height;
+          widths.forEach(
+            function (width, widthIndex) {
+              height = Math.round(width / aspect);
+              console.log(
+                "resizing " + filename + "to " + height + "x" + height
+              );
+              this.resize(width, height).write(
+                dest + "w" + width + "_" + filename,
+                function (err) {
+                  if (err) console.log("Error writing file: " + err);
+                }
+              );
+            }.bind(this)
+          );
+        }
+      });
+    });
+  }
+});
+```
+
+The pyramid of `})` at the end, is knowed as **callback hell**.
+
+#### Summary
+
+- Don't nest functions, modularize then
+- Use hoisting
+- Handle every single error in every one of your callbacks.
+- Create reusable functions and place them in a module to reduce the cognitive load required to understand your code.
+
 ## Map
 
 ## Set

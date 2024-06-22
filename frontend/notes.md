@@ -22,6 +22,10 @@ This handshake determines which cypher will be user to encrypt the communication
 
 !["navigation example"](./navigation.jpg)
 
+### Response
+
+Once the connection is established, the browser sends the an initial HTTP (Get) request on behalf of the user. Once the server receives the requests, it will reply with relevant response headers and the contents of the HTML.
+
 ## REST Principles
 
 Representation State Transfer is a group of software architecture that bring efficient, reliable and scalable systems.

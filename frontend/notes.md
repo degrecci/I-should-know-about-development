@@ -88,6 +88,10 @@ Layers do improve performance but are expensive when it comes to memory manageme
 
 When sections of the document are drawn in different layers, overlapping each other, compositing is necessary to ensure they are drawn to the screen in the right order and the content is rendered correctly.
 
+### Interactivity
+
+If loads includes JS, that was correctly deferred, and only executed after onload event fires, the main thread might be busy, and not available to scrolling, touch and other interactions.
+
 ## REST Principles
 
 Representation State Transfer is a group of software architecture that bring efficient, reliable and scalable systems.

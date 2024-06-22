@@ -2,6 +2,49 @@
 
 Javascript is a high-level, interpreted, lightweight, multi-paradigm and dynamic weak typing. It is most know as a scripting language for the web, but thanks to the runtime environment node, can algo be used on servers.
 
+## Event loop
+
+The event loop is resposable to execute the code. Collecting and processing events.
+
+Priorities:
+
+- Call stack
+- Microtask
+- Tasks
+
+```js
+console.log(1);
+// Blocking operation
+// Call stack
+
+queueMicrotask(() => {
+  // Non-blocking operation
+  // Web api
+  // Microtask
+  console.log(2);
+});
+
+setTimeout(() => {
+  // Non-blocking operation
+  // Web api
+  // Task
+  console.log(3);
+}, 0);
+
+console.log(4);
+// Blocking operation
+// Call stack
+
+Promise.resolve(true).then(() => {
+  // Non-blocking operation
+  // Web api
+  // Microtask
+  console.log(5);
+});
+
+///14253
+```
+
 ## Multiparadigm
 
 ## Dynamic weak typing

@@ -67,6 +67,27 @@ The browser also builds an accessibility treee that assist devices use to parse 
 
 Until the AOM is build, the content is not acessible to screen readers.
 
+### Render
+
+#### Style
+
+The third step is combining the DOM and CSSOM into a render tree.
+
+Each visible node has its CSSOM rules applied to it. The render tree holds all the visible nodes with content and computed styles — matching up all the relevant styles to every visible node in the DOM tree, and determining, based on the CSS cascade, what the computed styles are for each node.
+
+#### Layout
+
+The fourth step is running layout on the render tree to compute the geometry of each node. The first time the size and position of each node is determined is called _layout_. Subsequent recalculations are called _reflows_.
+
+#### Paint
+
+The last step is paiting the individual nodes to the screen. Painting can break the elements in the layout tree into layers.
+Layers do improve performance but are expensive when it comes to memory management, so should not be overused as part of web performance optimization strategies.
+
+#### Compositing
+
+When sections of the document are drawn in different layers, overlapping each other, compositing is necessary to ensure they are drawn to the screen in the right order and the content is rendered correctly.
+
 ## REST Principles
 
 Representation State Transfer is a group of software architecture that bring efficient, reliable and scalable systems.

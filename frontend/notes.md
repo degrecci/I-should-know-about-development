@@ -26,6 +26,47 @@ This handshake determines which cypher will be user to encrypt the communication
 
 Once the connection is established, the browser sends the an initial HTTP (Get) request on behalf of the user. Once the server receives the requests, it will reply with relevant response headers and the contents of the HTML.
 
+### Parsing
+
+Is the step the browser takes to turn the data ir receives into the DOM and CSSOM, whi is used by the renderer to paint a page to the screen.
+The DOM is the internal representation of the markup for the browser, and can be exposed and manipulated through varios APIs in javascript.
+
+#### Building the DOM tree
+
+The first step is processing the HTML markup and building the DOM tree. The DOM tree describes the content of the document.
+When the parses finds non-blocking resources, such as an image, the browser will request those resources and continue parsing.
+Parsing can continue when a CSS file is encountered, but `<script>` elements, particular those without `async` of `defer` attribute, block rendering and pause parsing of HTML.
+
+!["DOM tree"](./DOM-tree.jpg)
+
+#### Preload scanner
+
+While browsers parses the DOM tree, and occupies the main thread, the preload scanner is responsable to parse the content available and request high-priority resources like CSS, JS and web fonts.
+
+```html
+<link rel="stylesheet" href="styles.css" />
+<script src="myscript.js" async></script>
+<img src="myimage.jpg" alt="image description" />
+<script src="anotherscript.js" async></script>
+```
+
+Waiting to obtain CSS doesn't block HTML parsing or downloading, but it does block JavaScript because JavaScript is often used to query CSS properties' impact on elements.
+
+#### Building the CSSOM tree
+
+The second step is responsable to process the CSS and builds the CSSDOM tree. very simillar to the DOM tree.
+
+#### Javascript compilation
+
+While CSSDOM is being builded, the javascript and other assets are being downloaded, thanks to preload scanner.
+Javascript is parsed, compiled and interpreted. Most of the code is interpreted on the main thread.
+
+#### Building the acessibility three
+
+The browser also builds an accessibility treee that assist devices use to parse and interpret content. The AOM is like the DOM.
+
+Until the AOM is build, the content is not acessible to screen readers.
+
 ## REST Principles
 
 Representation State Transfer is a group of software architecture that bring efficient, reliable and scalable systems.

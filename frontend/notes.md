@@ -152,7 +152,7 @@ customElements.define("my-custom-element", MyCustomElement);
 
 ### Shadow-dom
 
-Set of Javascript API to attach and encapsulate shadow DOM tree to an element. Thisd is rendered separately to the main DOM
+Set of Javascript API to attach and encapsulate shadow DOM tree to an element. This is rendered separately to the main DOM
 
 !["Representation of shadow dom"](./shadow-dom.jpg)
 

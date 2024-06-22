@@ -4,6 +4,24 @@ Front-end development is resposable to create user interfaces of a website, work
 
 ## How the browser works
 
+### Navigation
+
+The first step when loading a web page, occurs when an user request a page by entering a URL into the address bar, clicking a link or submiting a form.
+
+#### DNS Lookup
+
+Thw first step is your browser make a requests for a DNS lookup, with us fuekded by a name server and return a response with an IP address. After this requests, the IP will be cached for a type. The DNS lookups ussually only need to be done once per hostname for a page Load.
+
+#### TCP Handshake
+
+Once we know the IP address, the browser set up a connection via TCP three-way handshake. So that way the browser and the web server can communicate.
+
+#### TLS Negotiation (HTTPS)
+
+This handshake determines which cypher will be user to encrypt the communications, verifies the server, and establishes that a secure connection is in place before beginning the actual transfer of data.
+
+!["navigation example"](./navigation.jpg)
+
 ## REST Principles
 
 Representation State Transfer is a group of software architecture that bring efficient, reliable and scalable systems.

@@ -51,7 +51,36 @@ Promise.resolve(true).then(() => {
 
 ## Promises
 
+A Promise is an _object_ representing the eventual completion or failure of an asynchronous operation.
+
+```js
+function successCallback(result) {
+  console.log(`Audio file ready at URL: ${result}`);
+}
+
+function failureCallback(error) {
+  console.error(`Error generating audio file: ${error}`);
+}
+
+createAudioFileAsync(audioSettings, successCallback, failureCallback);
+```
+
 ### async/await
+
+An async function is a `asyncFunction` object. Everytime that a async function is called, returns a new Promise, that can be resolved or rejected.
+
+Asyncs functions always returns a promise.
+
+```js
+async function foo() {
+  return 1;
+}
+
+// Even if is not explicity a promise, it will be wrapped.
+function foo() {
+  return Promise.resolve(1);
+}
+```
 
 ## Callback
 

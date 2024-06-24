@@ -47,7 +47,15 @@ Promise.resolve(true).then(() => {
 
 ## Multiparadigm
 
+That means that javascript can be used in diferents paradigms of programming, like object-oriented, imperative and declarative (functional).
+
 ## Dynamic weak typing
+
+Dynamic typed languages check the types and look for type errors during runtime. and statically typed languages do this in compile time.
+
+Weak typing means that JS has notion of types, but it's relaxed about them, and can treat values somewhat arbitrary. The stronger the typing system is, the stricter the rules are.
+
+!["dynamic static weak strong typing"](./dynamic-static-weak-strong-typing.jpg)
 
 ## Promises
 

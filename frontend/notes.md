@@ -171,6 +171,22 @@ When, we pass an argument { mode: "open" } to attachShadow(). With mode set to "
 
 ## SEO
 
+SEO is a proccess of making a website more visible to search engines, inproving the search ranking.
+
+SEO methods:
+
+#### Technical
+
+Semantic HTML, crawlers should only find the content you want indexed.
+
+#### Copywriting
+
+Write content in users language, use texts and images.
+
+#### Popularity
+
+Be linked by other established websites.
+
 ## SSR
 
 ## Micro frontends pros and cons

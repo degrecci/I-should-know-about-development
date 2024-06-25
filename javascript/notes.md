@@ -157,6 +157,10 @@ The pyramid of `})` at the end, is knowed as **callback hell**.
 - Handle every single error in every one of your callbacks.
 - Create reusable functions and place them in a module to reduce the cognitive load required to understand your code.
 
+## Scopes
+
+A scope is a set of variables, objects, and functions that you have access to. There are three types of scopes in JavaScript. Which are Global Scope, Function Scope (Local Scope), and Block Scope.
+
 ## Map
 
 ## Set

@@ -204,6 +204,18 @@ Single Page Application are webpages that are loaded in the first page interacti
 
 ## SSR
 
+Server Side Rendering came to solve the few problems of SPA's. This method revert the process of rendering a page, bringing the render efforts to the server.
+
+#### Advantages
+
+- Better SEO, It's possible to define the content to be rendered in the server, you can choose the content that ill help the search engines indexes.
+- Lower requirement to users, the render efforts is in the server.
+- Better performance
+
+#### Disadvantages
+
+- The time to first byte in SSR application is bigger, because the server need to preload the content to give the response. While the TTFB doesnt happen, the users needs to see a loading.
+
 ## Micro frontends pros and cons
 
 ## Accessibility

@@ -222,7 +222,35 @@ Server Side Rendering came to solve the few problems of SPA's. This method rever
 
 ## Web Security Knowledge
 
+Protective measures taken by developers to protect web applications from threats.
+
 ### CORS
+
+Cross-Origin Resource Sharing it's a mechanism that allows a website on one url to request data from a diferent url.
+
+#### Success
+
+1. Browser makes a requests,
+2. It adds an origin header to the request message
+3. If that request goest to a server on the same origin then it's allowed by the browser with no questions ask.
+
+#### Failure
+
+However if that requests goes to a diferent url, then it's known as a cross origin request.
+
+1. When sending the response the server will add the access control allow origin header
+2. It's value need to match the origin header on the request, or can be a wild card which allows any url to make the request
+3. If it's a mismatch though the browser will prevent the response from being shared with the client
+
+#### Solution
+
+The solution is on the server, configuring the response with the proper header
+
+express.js example
+
+```js
+app.use(cors({ origin: "http://foo.com" }));
+```
 
 ### HTTPS
 

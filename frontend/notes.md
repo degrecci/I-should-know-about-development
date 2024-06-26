@@ -187,6 +187,21 @@ Write content in users language, use texts and images.
 
 Be linked by other established websites.
 
+## SPA
+
+Single Page Application are webpages that are loaded in the first page interaction. Sometimes that doesn't mean that a page has a single chunk, the page can still be divided in many chunks.
+
+#### Advantages
+
+- Its fast because the code is already loaded and removes the necessities to load more code.
+- Mature libs like, angular, react and vuejs
+- Less requests to the server to load more code
+
+#### Disadvantages
+
+- Impredictable performance
+- hard SEO, you need to load the JS to make the requests, so you dont have all the content to search engines indexes.
+
 ## SSR
 
 ## Micro frontends pros and cons

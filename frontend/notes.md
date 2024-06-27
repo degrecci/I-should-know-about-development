@@ -254,10 +254,6 @@ app.use(cors({ origin: "http://foo.com" }));
 
 ### HTTPS
 
-### XSS
-
-Is a security exploit which allows an attacker to inject into a website malicious client-side code. The injected code is executed by the victims and lets the attackers bypass access controls and impersonate users.
-
 ### Content Security Policy
 
 CSP is a security standart to prevent cross-site scripting (XSS), clickjacking and other code injection attacks.
@@ -283,3 +279,29 @@ Where:
 - manifest.json (client-side)
 
 ### OWASP Security Risks
+
+Is an online community that produces: articles, methodologies, documentations, tools and technologies in the field of web application security.
+
+Top 10 OWASP vulnerabilities 2021:
+
+#### Injection
+
+#### Broken authentication
+
+#### Sensitive data exposure
+
+#### XML external entities (XXE)
+
+#### Broken access control
+
+#### Security misconfigurations
+
+#### Cross site scripting (XSS)
+
+Is a security exploit which allows an attacker to inject into a website malicious client-side code. The injected code is executed by the victims and lets the attackers bypass access controls and impersonate users.
+
+#### Insecure deserialization
+
+#### Using components with known vulnerabilities
+
+#### Insufficient logging and monitoring

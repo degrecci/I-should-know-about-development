@@ -260,4 +260,26 @@ Is a security exploit which allows an attacker to inject into a website maliciou
 
 ### Content Security Policy
 
+CSP is a security standart to prevent cross-site scripting (XSS), clickjacking and other code injection attacks.
+
+Where:
+
+- Headers (server-side)
+
+  - Content-Security-Policy:
+  - default-src 'self'; _Only loads from the own domain_
+  - script-src js.mysite.com;
+  - img-src imgur.com;
+
+- Metadata (client-side)
+
+```html
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self'; img-src https://*; child-src 'none';"
+/>
+```
+
+- manifest.json (client-side)
+
 ### OWASP Security Risks

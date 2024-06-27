@@ -254,6 +254,10 @@ app.use(cors({ origin: "http://foo.com" }));
 
 ### HTTPS
 
+### XSS
+
+Is a security exploit which allows an attacker to inject into a website malicious client-side code. The injected code is executed by the victims and lets the attackers bypass access controls and impersonate users.
+
 ### Content Security Policy
 
 ### OWASP Security Risks

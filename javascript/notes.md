@@ -163,4 +163,48 @@ A scope is a set of variables, objects, and functions that you have access to. T
 
 ## Map
 
+Map objects are collections of key-value pairs.
+A key in the Map may only occur once; It is unique in the Map's collection.
+
+### Objects vs Maps
+
+They are similar, both uses key and value, retrieve those values, delete keys and detech whether something is stored at a key.
+
+#### Diferences
+
+- Accidental Keys
+  - Map does not not container default keys.
+  - Object has a prototype
+- Security
+  - Map is safe to use with user-provided keys and values
+  - Objects can lead to object injection attacks
+- Key types
+  - Map keys can be anu value
+  - Objects keys must be a String or a Symbol.
+- Key Order
+  - A map interates entries, keys and values in the order of entry insertion
+  - Object are ordered now, the order is complex.
+- Size
+  - Map size is easily retrived from `size` property
+  - In object um neet t transform in a array with `Object.keys()` then get via `length`
+- Iteration
+  - Map is iterable directly
+  - Objects its iterable transformin in array by `Object.keys` or `Objects.entries`
+- Performance
+  - Maps perform better in frequent additions and removals
+  - Objects is not optmized for additions ans removals
+- Serialization and parsing
+  - Maps has no support for serialization and parsing (needs to build)
+  - Objects has native support with `JSON.stringify` or `JSON.parse()`
+
+#### Example
+
+```js
+const wrongMap = new Map();
+wrongMap["bla"] = "blaa";
+wrongMap["bla2"] = "blaaa2";
+
+console.log(wrongMap); // Map { bla: 'blaa', bla2: 'blaaa2' }
+```
+
 ## Set

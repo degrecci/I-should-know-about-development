@@ -218,6 +218,22 @@ Server Side Rendering came to solve the few problems of SPA's. This method rever
 
 ## Micro frontends pros and cons
 
+Micro frontend it's an approach of software architecture with the objective to divide the user interface in smaller and independent modules. This approach is very similar to micro services with the same module principles of scalability and independency.
+
+#### Advantages
+
+- Scalability
+- Modularity
+- Continuous Improvement
+- Simple integration with microservices
+
+#### Disadvantages
+
+- Complexity
+- Performance Problems
+- Need for Coordination
+- Security Challenges
+
 ## Accessibility
 
 ## Web Security Knowledge

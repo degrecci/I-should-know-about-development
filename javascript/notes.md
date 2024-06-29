@@ -208,3 +208,26 @@ console.log(wrongMap); // Map { bla: 'blaa', bla2: 'blaaa2' }
 ```
 
 ## Set
+
+Set objects are collections of values. This value in set may only occur once.
+It is very useful to create a set of values that are uniques and remove the repetitive values
+
+```js
+const a = new Set([1, 2, 3]);
+const b = new Map([
+  [1, "one"],
+  [2, "two"],
+  [4, "four"],
+]);
+console.log(a.union(b)); // Set(4) {1, 2, 3, 4}
+```
+
+```js
+let set = new Set();
+set.add("test");
+set.add("test");
+set.add("test2");
+
+console.log(set.size); // 2
+console.log([...set]); // [ 'test', 'test2' ]
+```

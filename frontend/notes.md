@@ -223,9 +223,20 @@ Micro frontend it's an approach of software architecture with the objective to d
 #### Advantages
 
 - Scalability
+
+  Helps to scalate your applications allowing to rewrite or restruct diferent parts of your application or add new features without many impacts.
+
 - Modularity
+
+  Helps to separate your application in modules and diferent teams can work in diferent parts of the application independently.
+
 - Continuous Improvement
+
+With diferent teams working in diferent parts of the application, it is easier to create new features without impact.
+
 - Simple integration with microservices
+
+You can separate your application using the microservices as base, and having a modular application
 
 #### Disadvantages
 

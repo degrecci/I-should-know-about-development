@@ -241,9 +241,17 @@ You can separate your application using the microservices as base, and having a 
 #### Disadvantages
 
 - Complexity
+
+Manage multiple MFs can be a challenge and hard to work together, and share code between then.
+
 - Performance Problems
+  Load more MFs can result in more HTTP requests, and could delay the page load.
+
 - Need for Coordination
+  There's more need to coordenate the communication between teams.
+
 - Security Challenges
+  Multiple enter points could create security problems, the team need a good communication about vulnerabilities.
 
 ## Accessibility
 

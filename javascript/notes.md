@@ -231,3 +231,7 @@ set.add("test2");
 console.log(set.size); // 2
 console.log([...set]); // [ 'test', 'test2' ]
 ```
+
+## Dynamic function
+
+### Pure function

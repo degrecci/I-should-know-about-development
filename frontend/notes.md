@@ -289,6 +289,18 @@ app.use(cors({ origin: "http://foo.com" }));
 
 ### HTTPS
 
+HTTPS is a secure way to send data between a web server and a browser. HTTPS is encrypted in order to increase security of data transfer using a protocol called TLS/SSL.
+
+#### HTTP
+
+In standart HTTP, all information is sent in clear text, it's vulnerable to anybody who wants it.
+
+#### PORT
+
+HTTP uses port 443 insted of HTTP that uses port 80
+
+#### How to use
+
 ### Content Security Policy
 
 CSP is a security standart to prevent cross-site scripting (XSS), clickjacking and other code injection attacks.
